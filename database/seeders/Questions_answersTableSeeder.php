@@ -1,0 +1,248 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use DB;
+
+class Questions_answersTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+       $questions_answers = [
+            [
+                'subject_code' => 'S001',
+                'question' => 'What is the SI unit of force?',
+                'a' => 'Newton',
+                'b' => 'Joule',
+                'c' => 'Watt',
+                'd' => 'Pascal',
+                'correct_answer' => 'A',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'subject_code' => 'S001',
+                'question' => 'When a person can see only nearby objects, the condition is called',
+                'a' => 'Hypermetropia',
+                'b' => 'Astigmatism',
+                'c' => 'Myopia',
+                'd' => 'Retinopathy',
+                'correct_answer' => 'C',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'subject_code' => 'S001',
+                'question' => 'The time taken by a pendulum to complete one oscillation is called its',
+                'a' => 'Maximum Speed',
+                'b' => 'Average Speed',
+                'c' => 'Time Speed',
+                'd' => 'Time interval',
+                'correct_answer' => 'C',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'subject_code' => 'S001',
+                'question' => 'How many millimeters make ten kilometers?',
+                'a' => '1010',
+                'b' => '109',
+                'c' => '108',
+                'd' => '107',
+                'correct_answer' => 'D',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            
+            [
+                'subject_code' => 'S001',
+                'question' => '‘Gallon’ is commonly used',
+                'a' => 'To refer to speed',
+                'b' => 'To refer to a container',
+                'c' => 'As a measure of volume',
+                'd' => 'To express containers in terms of barrel.',
+                'correct_answer' => 'C',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'subject_code' => 'S001',
+                'question' => 'If the speed of an object moving along a straight line is constant, its motion is said to be ___________',
+                'a' => 'Uniform',
+                'b' => 'Periodic',
+                'c' => 'Circular',
+                'd' => 'Non-uniform',
+                'correct_answer' => 'A',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            
+            [
+                'subject_code' => 'S001',
+                'question' => 'If the mass of an object is 60 kgs, what will be its weight on the moon? (N=Newton)',
+                'a' => '60N',
+                'b' => '600',
+                'c' => '98N',
+                'd' => '10N',
+                'correct_answer' => 'C',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            
+            [
+                'subject_code' => 'S001',
+                'question' => 'The side mirrors of vehicles are of_______type of mirrors?',
+                'a' => 'Convex',
+                'b' => 'Concave',
+                'c' => 'Plane',
+                'd' => 'Inverted',
+                'correct_answer' => 'A',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            
+            [
+                'subject_code' => 'S001',
+                'question' => 'What is mass per unit volume?',
+                'a' => 'Force',
+                'b' => 'Work',
+                'c' => 'Density',
+                'd' => 'Pressure',
+                'correct_answer' => 'C',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'subject_code' => 'S001',
+                'question' => 'Which type of waves is used to penetrate hard objects at hospitals and Airports?',
+                'a' => 'Sound waves',
+                'b' => 'X-Ray',
+                'c' => 'Electromagnetic',
+                'd' => 'Mechanics',
+                'correct_answer' => 'B',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],            
+            [
+                'subject_code' => 'S002',
+                'question' => 'What is the chemical symbol for oxygen?',
+                'a' => 'O',
+                'b' => 'O2',
+                'c' => 'C',
+                'd' => 'CO2',
+                'correct_answer' => 'B',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'subject_code' => 'S002',
+                'question' => 'What are the key factors of solid-state reactions?',
+                'a' => 'Size of the particles',
+                'b' => 'Mechanical properties of solids',
+                'c' => 'Thermodynamic and kinetic factors',
+                'd' => 'Environmental factors',
+                'correct_answer' => 'D',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'subject_code' => 'S002',
+                'question' => 'Which approach can be employed to produce a high degree of homogeneity in the creation of ZnFe2O4 spinel?',
+                'a' => 'Distillation method',
+                'b' => 'Vaporization method',
+                'c' => 'Coprecipitation method',
+                'd' => 'Crystallization method',
+                'correct_answer' => 'C',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'subject_code' => 'S002',
+                'question' => 'Which solid structure has a definite and sharp melting point?',
+                'a' => 'All types of solids',
+                'b' => 'No type of solid',
+                'c' => 'Amorphous solids',
+                'd' => 'Crystalline solids',
+                'correct_answer' => 'D',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'subject_code' => 'S002',
+                'question' => ' _________ is a crystalline’s basic repetitive structural unit.',
+                'a' => 'Monomer',
+                'b' => 'Molecule',
+                'c' => 'Unit Cell',
+                'd' => 'Atom',
+                'correct_answer' => 'C',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'subject_code' => 'S002',
+                'question' => 'Sulfur exists in two polymorphic forms ____________ and ______________',
+                'a' => 'rhombic and monoclinic',
+                'b' => 'rhombic and triclinic',
+                'c' => 'hexagonal and triclinic',
+                'd' => 'hexagonal and monoclinic',
+                'correct_answer' => 'A',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'subject_code' => 'S002',
+                'question' => 'What is the total number of Bravais lattices in the crystal structures?',
+                'a' => '3',
+                'b' => '6',
+                'c' => '14',
+                'd' => '24',
+                'correct_answer' => 'C',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'subject_code' => 'S002',
+                'question' => 'When X-rays are diffracted by a series of planes, the resultant intensity is sometimes zero; these are created by absent reflections; what is the number of absent reflections divided?',
+                'a' => '2',
+                'b' => '10',
+                'c' => '50',
+                'd' => '100',
+                'correct_answer' => 'A',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'subject_code' => 'S002',
+                'question' => 'Which of the following claims about crystal lattice diffraction patterns is correct?',
+                'a' => 'Diffraction patterns possess a centre of symmetry',
+                'b' => 'Diffraction patterns don’t have centre of symmetry',
+                'c' => 'Diffraction patterns are linear space',
+                'd' => 'Diffraction patterns contains α-rays',
+                'correct_answer' => 'A',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'subject_code' => 'S002',
+                'question' => 'What are the crystallization’s initial materials?',
+                'a' => 'Liquid, aqueous solution, emulsion',
+                'b' => 'Gas, aqueous solution, foam',
+                'c' => 'Aqueous solution, melt, glass or gel',
+                'd' => 'Solid, gas, melt, solid aerosol',
+                'correct_answer' => 'C',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+          ];
+
+        // Insert data into the questions_questions table
+        DB::table('questions_answers')->insert($questions_answers);
+    
+    }
+}
